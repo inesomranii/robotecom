@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-04-21T20:51:38.662434" rpa="false" schemaversion="5">
+<suite id="s1" name="Ecommerce Robot" source="C:\Users\hp\OneDrive\Bureau\ecommerce robot">
+<suite id="s1-s1" name="Login" source="C:\Users\hp\OneDrive\Bureau\ecommerce robot\login.robot">
+<test id="s1-s1-t1" name="Forget password" line="18">
+<kw name="Navigate to URL" owner="keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-21T20:51:40.088480" level="INFO">Opening browser 'Chrome' to base url 'https://ecommerce-playground.lambdatest.io/'.</msg>
+<arg>${url}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-21T20:51:40.000922" elapsed="30.643216"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-04-21T20:52:10.644138" elapsed="1.208946"/>
+</kw>
+<arg>${url}</arg>
+<status status="PASS" start="2024-04-21T20:51:40.000922" elapsed="31.852162"/>
+</kw>
+<kw name="Forget password" owner="keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-21T20:52:11.853084" level="INFO">Clicking element 'xpath=//header/div[@id='main-navigation']/div[@id='entry_217831']/div[1]/div[3]/nav[1]/div[1]/ul[1]/li[6]/a[1]'.</msg>
+<arg>xpath=//header/div[@id='main-navigation']/div[@id='entry_217831']/div[1]/div[3]/nav[1]/div[1]/ul[1]/li[6]/a[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-21T20:52:11.853084" elapsed="3.714532"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-04-21T20:52:15.618113" level="INFO">Current page contains text 'Returning Customer'.</msg>
+<arg>Returning Customer</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-04-21T20:52:15.567616" elapsed="0.050497"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-21T20:52:15.618113" level="INFO">Typing text 'iness12@gmail.com' into text field 'css=#input-email'.</msg>
+<arg>css=#input-email</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-21T20:52:15.618113" elapsed="0.965416"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-21T20:52:16.583529" level="INFO">Clicking element '//div[@class='form-group']//a[normalize-space()='Forgotten Password']'.</msg>
+<arg>//div[@class='form-group']//a[normalize-space()='Forgotten Password']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-21T20:52:16.583529" elapsed="1.726059"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-04-21T20:52:18.365541" level="INFO">Current page contains text 'Forgot Your Password?'.</msg>
+<arg>Forgot Your Password?</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-04-21T20:52:18.309588" elapsed="0.055953"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-21T20:52:18.365541" level="INFO">Typing text 'iness12@gmail.com' into text field '//input[@id='input-email']'.</msg>
+<arg>//input[@id='input-email']</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-21T20:52:18.365541" elapsed="1.635025"/>
+</kw>
+<arg>${email}</arg>
+<status status="PASS" start="2024-04-21T20:52:11.853084" elapsed="8.147482"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-04-21T20:52:20.000566" elapsed="29.956830"/>
+</kw>
+<status status="PASS" start="2024-04-21T20:51:39.992926" elapsed="69.967710"/>
+</test>
+<status status="PASS" start="2024-04-21T20:51:39.087683" elapsed="70.877961"/>
+</suite>
+<status status="PASS" start="2024-04-21T20:51:38.745109" elapsed="71.236627"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Ecommerce Robot">Ecommerce Robot</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Login">Ecommerce Robot.Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
